@@ -25,7 +25,7 @@ y_num_pred = predictions[0]
 y_cat_pred_probs = predictions[1]
 y_cat_pred = np.argmax(y_cat_pred_probs, axis=1)
 
-# Calculate MSE for numerical features
+# Calculate MSE (Mean Squared Error) for numerical features
 mse = mean_squared_error(y_num, y_num_pred)
 print(f'Mean Squared Error for numerical features: {mse}')
 
